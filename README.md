@@ -118,7 +118,9 @@ Router use-note...
    
   
   *note1- means redirect to path /repos/repo, and it alaways past two params 'reactjs' & 'react-router'
+  
   *note2- the same as two params 'facebook' & 'react'
+  
   *note3- handleSubmit -> trigger handleSubmit(event) and set path what path you click submit button...
   
   repo.js
