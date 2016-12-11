@@ -98,13 +98,13 @@ Router use-note...
                     <h2>Repos</h2>
                     <ul>
                         <li>
-                            <NavLink to="/repos/repo/reactjs/react-router">React-Router</NavLink>
+                            <NavLink to="/repos/repo/reactjs/react-router">React-Router</NavLink> //*note1
                         </li>
                         <li>
-                            <NavLink to="/repos/repo/facebook/react">React</NavLink>
+                            <NavLink to="/repos/repo/facebook/react">React</NavLink> //*note2
                         </li>
                         <li>
-                            <form onSubmit={this.handleSubmit}>
+                            <form onSubmit={this.handleSubmit}> //*note3
                                 <input type="text" placeholder="userName"/>{' '}
                                 <input type="text" placeholder="repoName"/>{' '}
                                 <button type="submit">Go</button>
@@ -114,7 +114,16 @@ Router use-note...
                     </ul>
                 </div>)
         }
-        });
+      });
+   
+  
+  *note1- means redirect to path /repos/repo, and it alaways past two params 'reactjs' & 'react-router'
+  *note2- the same as two params 'facebook' & 'react'
+  *note3- handleSubmit -> trigger handleSubmit(event) and set path what path you click submit button...
+  
+  repo.js
+  
+  
   
   
   
