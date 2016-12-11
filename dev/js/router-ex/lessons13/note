@@ -1,0 +1,34 @@
+set context path...
+
+in repos-path...
+
+1. create form action..
+
+<form onSubmit={this.handleSubmit}>
+    <input type='text' placeholder='userName'/>
+    <input type='text' placeholder='repo/>
+    <button type='submit'>Go</button>
+</form>
+
+2. set contextTypes..
+
+contextTypes:{
+    router:React.Types.object
+}
+
+3. create handleSubmit(event) to match this.handleSubmit...
+
+handleSubmit(event){
+
+    event.preventDefault();
+    const user = event.target.elements[0].value;
+    const repo = event.target.elements[1].value;
+
+    //set path...
+    const path = `repos/repo/${user}/${repo}`
+
+    this.context.router.push(path)
+}
+
+
+
