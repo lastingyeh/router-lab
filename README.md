@@ -49,22 +49,22 @@ Router use-note...
   *activeClassName means when you clicked the Link (defined your own css)
     
   app.js
-  
-  <div>
-    <h2> React Router Tutorial </h2>
-    <ul role='nav'>
-      <li>
-        <NavLink to="/" onlyActiveOnIndex>Home</NavLink>
-      </li>
-      <li>
-        <NavLink to="/about" >About</NavLink>
-      </li>
-      <li>
-        <NavLink to="/repos" >Repos</NavLink>
-      </li>
-    </ul>
-    
-    {this.props.children}
+   
+    <div>
+      <h2> React Router Tutorial </h2>
+      <ul role='nav'>
+        <li>
+          <NavLink to="/" onlyActiveOnIndex>Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/about" >About</NavLink>
+        </li>
+        <li>
+          <NavLink to="/repos" >Repos</NavLink>
+        </li>
+      </ul>
+      {this.props.children}
+    </div>
     
   * props for 'to' match 'index.js props 'path'
   
