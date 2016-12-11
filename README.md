@@ -51,7 +51,7 @@ Router use-note...
   app.js
   
   <div>
-    .......
+    <h2> React Router Tutorial </h2>
     <ul role='nav'>
       <li>
         <NavLink to="/" onlyActiveOnIndex>Home</NavLink>
@@ -63,7 +63,7 @@ Router use-note...
         <NavLink to="/repos" >Repos</NavLink>
       </li>
     </ul>
-
+    
     {this.props.children}
     
   * props for 'to' match 'index.js props 'path'
