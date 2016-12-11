@@ -123,6 +123,14 @@ Router use-note...
   
   repo.js
   
+        const {userName, repoName} = this.props.params; //* note4
+        return (
+            <div>
+                <h2>{userName} / {repoName}</h2>
+            </div>
+        );
+  
+  *note4 get params ....
   
   
   
